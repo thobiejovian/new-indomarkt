@@ -1,0 +1,230 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-brand .logo{
+    background: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+}
+.landing-section {
+    height: 100vh;
+    background-image: linear-gradient( rgba(66, 66, 66, 0.59), rgba(70, 68, 68, 0.84)), url("img/cover.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing-wrapper span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.landing-wrapper span.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+.typed-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 58px;
+    font-weight: 600;
+}
+.landing-details{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.landing-button{
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+}
+.service-section{
+    padding-top: 70px;
+}
+.service-section .service-headline{
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+.service-section .card{
+    border: none;
+}
+.service-section .card .card-header{
+    background: none;
+    margin-bottom: 0;
+}
+.service-section .card .card-body{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.service-section .card .card-header:after{
+    font-family:'FontAwesome';
+    content:"\f068";
+    float: right;
+    font-size: 18px;
+}
+.service-section .card .collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\f067";
+}
+.background-wrapper{
+    margin-top: -30px;
+}
+#service-logo{
+    background-image: url("img/service.png");
+    background-position: center left;
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+
+.separator{
+    padding: 0;
+}
+.online-shop{
+    padding-top: 70px;
+    background: #fcdea2;
+}
+.shop-headline{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+.shop-motto{
+    font-size: 13px;
+    margin: 0;
+    font-style: italic;
+    font-weight: 500;
+}
+.circle{
+    width: 5px;
+    height: 5px;
+    position: relative;
+    border-radius: 50%;
+    background: #000000;
+    margin: 22px auto 30px auto;
+}
+.circle:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-radius: 50%;
+    background: #000000;
+}
+.circle:after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    border-radius: 50%;
+    background: #000000;
+}
+.operation-hours p{
+    margin: 0;
+    font-size: 15px;
+}
+.details{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.student-service{
+    padding-top: 70px;
+}
+.student-headline{
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+}
+.student-service .card{
+    border: 1px solid #fcdea2;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.card img{
+    height: 200px;
+}
+.card-body p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+.insurance-service{
+    padding-top: 70px;
+    background: #fcdea2;
+}
+.insurance-headline{
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+.circle-wrapper{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+.circle-wrapper i{
+    font-size: 38px;
+}
+.insurance-details{
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+.gallery h3{
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+}
+.feedback-section{
+    padding: 70px 0;
+    background: #fcdea2;
+}
+.carousel-item div{
+    margin: 0 auto;
+}
+.feedback-image-1{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid #fff;
+    background-image: url("img/testi1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.feedback-image-2{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid #fff;
+    background-image: url("img/testi2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 1023px) {
+    #service-logo{
+        background-size: 500px;
+    }
+}
+@media (max-width: 767px) {
+    #service-logo{
+        height: 300px;
+        background-position: center;
+    }
+}
